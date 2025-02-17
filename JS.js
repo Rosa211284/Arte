@@ -128,7 +128,7 @@ const obrasDeArte = [
 
 
 document.getElementById('button').addEventListener('click', () => {
-    // Seleccionar una obra de arte aleatoria
+   
     const obraAleatoria = obrasDeArte[Math.floor(Math.random() * obrasDeArte.length)];
 
    
