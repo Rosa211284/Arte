@@ -126,16 +126,16 @@ const obrasDeArte = [
       //-------------imagen ----------------------------------------------------------------------------
 ];
 
-// Evento para cambiar la imagen de fondo
+
 document.getElementById('button').addEventListener('click', () => {
     // Seleccionar una obra de arte aleatoria
     const obraAleatoria = obrasDeArte[Math.floor(Math.random() * obrasDeArte.length)];
 
-    // Cambiar la imagen de fondo del body
+   
     document.body.style.backgroundImage = `url(${obraAleatoria.imagen})`;
     document.body.style.backgroundSize = "cover";
     document.body.style.backgroundPosition = "center";
 
-    // Mostrar la información de la obra
+    
     document.getElementById('info').textContent = `${obraAleatoria.titulo} por ${obraAleatoria.autor}`;
 });
